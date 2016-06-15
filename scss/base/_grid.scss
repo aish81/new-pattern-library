@@ -17,6 +17,9 @@
   border:1px solid red;
   .col{
     display:block; float:left; border:1px solid green; box-sizing: border-box;
+    &.pad-x-small{
+      padding:$x-small;
+    }
     &.pad-small{
       padding:$small;
     }

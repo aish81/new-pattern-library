@@ -1,1 +1,9 @@
-nav{background-color:$black;}
+nav{background-color:$black;
+  @extend %clearfix;
+  ul{
+    li{display: block; float: left; padding-right: $small;
+      //replace colour with variable
+      a{color:white;}
+    }
+  }
+}

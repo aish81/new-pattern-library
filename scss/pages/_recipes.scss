@@ -1,6 +1,7 @@
 .recipe-card{
   background-color: #0f7595;
-  max-with:300px;
+  display: block;
+  float:left;
   img{background-color: #333333;}
   h3{ text-transform: capitalize;}
   ul.recipe-icons{
