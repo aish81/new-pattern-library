@@ -1,0 +1,40 @@
+//setting responsive breakpoints
+
+@mixin large-tablet {
+  @media only screen and (min-width:1024px) {
+    @content;
+  }
+}
+
+@mixin large-tablet {
+  @media only screen and (min-width:1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width:1280px) {
+    @content;
+  }
+}
+
+@mixin large-desktop{
+  @media only screen and (min-width:1440px) {
+    @content;
+  }
+}
+
+
+
+
+//clear fix
+%clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
