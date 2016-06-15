@@ -16,6 +16,9 @@ p {
 .quarter {
   width: 25%; }
 
+.three-quarters {
+  width: 75%; }
+
 .dev {
   background-color: rgba(0, 0, 0, 0.2); }
 
