@@ -42,3 +42,15 @@ p {
 
 .row:after {
   clear: both; }
+
+.recipe-card {
+  background-color: #0f7595;
+  max-with: 300px; }
+  .recipe-card img {
+    background-color: #333333; }
+  .recipe-card h3 {
+    text-transform: capitalize; }
+  .recipe-card ul.recipe-icons li {
+    display: block;
+    float: left;
+    padding-right: 20px; }
