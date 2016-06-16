@@ -13,5 +13,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ash Henry",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aish81/new-pattern-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aish81/new-pattern-library/issues"
+  },
+  "homepage": "https://github.com/aish81/new-pattern-library#readme"
 }

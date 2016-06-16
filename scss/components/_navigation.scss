@@ -1,9 +1,10 @@
-nav{background-color:$black;
+nav{background-color:#ececec;
+  img{display:inline-block; padding: $small $small $small 0;}
   @extend %clearfix;
-  ul{height:110px;
-    li{display: block; float: left; padding: $small $small $small 0;
+  ul{height:7px; display:inline-block; vertical-align: top;
+    li{display: block; float: left; padding: $medium $small $small 0;
       //replace colour with variable
-      a{color:white;}
+      a{color:$black; text-decoration: none;}
     }
   }
 }

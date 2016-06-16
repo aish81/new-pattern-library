@@ -5,4 +5,16 @@
   @return $remSize * 1rem;
 }
 
-p{color:$red;}
+p{color:$red; font-family: $Tiempos;}
+
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('/fonts/TiemposHeadlineWeb-Regular.eot'); /* IE9 Compat Modes */
+  src:  url('/fonts/TiemposHeadlineWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+ // url('../fonts/journal-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+ // url('../fonts/journal-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
