@@ -1,7 +1,7 @@
 nav{background-color:$black;
   @extend %clearfix;
-  ul{
-    li{display: block; float: left; padding-right: $small;
+  ul{height:110px;
+    li{display: block; float: left; padding: $small $small $small 0;
       //replace colour with variable
       a{color:white;}
     }

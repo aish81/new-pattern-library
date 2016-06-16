@@ -8,3 +8,15 @@
     li{display:block; float:left; padding-right:$small;}
   }
 }
+
+ul.recipe-tiles
+{
+  li{
+    width:25%;
+    min-height: 200px;
+    border:1px solid red;
+    background-color: #00AA00;
+    display:block; float:left;
+    &.featured{width:50%; background-color: #4a0263;}
+  }
+}
