@@ -2,15 +2,15 @@
   background-color: #0f7595;
   display: block;
   float:left;
-  img{background-color: #333333;}
-  h3{ text-transform: capitalize;}
+  img{background-color: #333333; width:100%;}
+  h3{ text-transform: capitalize; margin-top:-2em;}
   ul.recipe-icons{
     li{display:block; float:left; padding-right:$small;}
   }
 }
 
 ul.recipe-tiles
-{
+{@include ul-start-space(0);
   li{
     width:25%;
     min-height: 200px;

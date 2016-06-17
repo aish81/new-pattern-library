@@ -1,12 +1,46 @@
 //setting responsive breakpoints
 
-@mixin large-tablet {
-  @media only screen and (min-width:1024px) {
+@mixin tiny-screen {
+  @media only screen and (min-width:0px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media only screen and (min-width:320px) {
+    @content;
+  }
+}
+@mixin medium-mobile {
+  @media only screen and (min-width:375px) {
+    @content;
+  }
+}
+@mixin large-mobile {
+  @media only screen and (min-width:480px) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media only screen and (min-width:640px){
+    @content;
+  }
+}
+
+@mixin medium-tablet {
+  @media only screen and (min-width:768px) {
     @content;
   }
 }
 
 @mixin large-tablet {
+  @media only screen and (min-width:980px) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
   @media only screen and (min-width:1024px) {
     @content;
   }
@@ -18,10 +52,42 @@
   }
 }
 
+@mixin large-desktop {
+  @media only screen and (min-width:1440px) {
+    @content;
+  }
+}
+
+@mixin up-to-tablet {
+  @media only screen and (max-width:768px) {
+    @content;
+  }
+}
+
+@mixin large-tablet {
+  @media only screen and (min-width:1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width:1200px) {
+    @content;
+  }
+}
+
 @mixin large-desktop{
   @media only screen and (min-width:1440px) {
     @content;
   }
+}
+
+//reset ul before space
+@mixin ul-start-space($space){
+  -webkit-padding-start: $space;
+  -webkit-margin-before: $space;
+  -moz-margin-start: $space;
+  padding-left:$space;
 }
 
 

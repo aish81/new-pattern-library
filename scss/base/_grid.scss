@@ -10,6 +10,58 @@
 //dev bg show for testing/dev
 .dev {background-color: rgba(0,0,0,0.2);}
 
+// container
+.container{
+  margin:0 auto;
+}
+
+@include small-mobile{
+  .container{width:300px;}
+  .half,
+  .quarter
+  {width:100%;}
+}
+
+@include medium-mobile{
+  .container{width:360px;}
+}
+
+@include large-mobile{
+  .container{width:460px;}
+  .half,
+  .quarter
+  {width:50%;}
+}
+
+
+@include small-tablet{
+  .container{ width:620px;}
+}
+@include medium-tablet{
+  .container{ width:760px;}
+
+}
+
+@include large-tablet {
+  .container{ width:960px;}
+
+}
+
+@include small-desktop {
+  .container{ width:1000px;}
+
+}
+@include desktop {
+  .container{ width:1260px;}
+
+}
+@include large-desktop {
+  .container{ width:1400px;}
+
+}
+
+
+
 //row and column settings
 .row{
   @extend %clearfix;
