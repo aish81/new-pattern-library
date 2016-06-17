@@ -1,22 +1,35 @@
 .recipe-card{
-  background-color: #0f7595;
   display: block;
   float:left;
-  img{background-color: #333333; width:100%;}
-  h3{ text-transform: capitalize; margin-top:-2em;}
+  border:1px solid #ececec;
+  border-radius:1em 1em 0 0 ;
+  .label-watch{background-color: $red; color:white; padding: $x-small $small; margin-top:-$large; position:absolute;
+   font-family: $roboto;}
+  img{background-color: #333333; width:100%; border-radius:1em 1em 0 0 ;
+  }
+  h3{ margin:0; padding:$x-small; font-weight:400;}
   ul.recipe-icons{
-    li{display:block; float:left; padding-right:$small;}
+    @include ul-start-space($x-small);
+    li{display:block; float:left; padding-right:$small; font-family:$icon-font; }
   }
 }
 
 ul.recipe-tiles
 {@include ul-start-space(0);
   li{
+    box-sizing: border-box;
     width:25%;
-    min-height: 200px;
-    border:1px solid red;
-    background-color: #00AA00;
+    padding:$x-small;
     display:block; float:left;
-    &.featured{width:50%; background-color: #4a0263;}
+    ul{@include ul-start-space(0);
+      li{padding:$x-small;}
+    }
+    img{width:100%;}
+    &.featured{
+      width:50%;
+      >*{display:block; float:left; box-sizing: border-box;}
+      img{width:50%; }
+      .tile-featured-description{width:50%; padding: $x-small; background-color: $red; color:white; }
+    }
   }
 }

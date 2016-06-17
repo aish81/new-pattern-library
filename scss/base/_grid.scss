@@ -24,13 +24,18 @@
 
 @include medium-mobile{
   .container{width:360px;}
+  .half,
+  .quarter
+  {width:100%;}
 }
 
 @include large-mobile{
-  .container{width:460px;}
-  .half,
-  .quarter
-  {width:50%;}
+  .container {
+    width: 460px;
+    .half,
+    .quarter
+    {width: 50%;}
+  }
 }
 
 
@@ -48,8 +53,12 @@
 }
 
 @include small-desktop {
-  .container{ width:1000px;}
+  .container {
+    width: 1000px;
+    .quarter {width: 25%;}
 
+    .half { width: 50%; }
+  }
 }
 @include desktop {
   .container{ width:1260px;}
@@ -65,10 +74,8 @@
 //row and column settings
 .row{
   @extend %clearfix;
-  //this need to be removed
-  border:1px solid red;
   .col{
-    display:block; float:left; border:1px solid green; box-sizing: border-box;
+    display:block; float:left;  box-sizing: border-box;
     &.pad-x-small{
       padding:$x-small;
     }
