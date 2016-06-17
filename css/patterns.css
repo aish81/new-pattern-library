@@ -3,8 +3,101 @@
 body {
   margin: 0; }
 
+nav:before, .row:before, nav:after, .row:after {
+  content: "";
+  display: table; }
+
+nav:after, .row:after {
+  clear: both; }
+
+.recipe-card {
+  display: block;
+  float: left;
+  border: 1px solid #ececec;
+  border-radius: 1em 1em 0 0; }
+  .recipe-card .label-watch {
+    background-color: #990000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: -40px;
+    position: absolute;
+    font-family: "Roboto", sans-serif; }
+  .recipe-card img {
+    background-color: #333333;
+    width: 100%;
+    border-radius: 1em 1em 0 0; }
+  .recipe-card h3 {
+    margin: 0;
+    padding: 10px;
+    font-family: "Tiempos";
+    font-weight: 400; }
+  .recipe-card ul.recipe-icons {
+    -webkit-padding-start: 10px;
+    -webkit-margin-before: 10px;
+    -moz-margin-start: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px; }
+    .recipe-card ul.recipe-icons li {
+      display: block;
+      float: left;
+      padding-right: 20px;
+      font-family: "icon-font-1"; }
+
+ul.recipe-tiles {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -moz-margin-start: 0;
+  padding-left: 0; }
+  ul.recipe-tiles li {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 10px;
+    display: block;
+    float: left; }
+    ul.recipe-tiles li ul {
+      -webkit-padding-start: 0;
+      -webkit-margin-before: 0;
+      -moz-margin-start: 0;
+      padding-left: 0; }
+      ul.recipe-tiles li ul li {
+        padding: 10px; }
+    ul.recipe-tiles li img {
+      width: 100%; }
+    ul.recipe-tiles li.featured {
+      width: 50%; }
+      ul.recipe-tiles li.featured > * {
+        display: block;
+        float: left;
+        box-sizing: border-box; }
+      ul.recipe-tiles li.featured img {
+        width: 50%; }
+      ul.recipe-tiles li.featured .tile-featured-description {
+        width: 50%;
+        padding: 10px;
+        background-color: #990000;
+        color: white; }
+
+nav {
+  background-color: #ececec; }
+  nav img {
+    display: inline-block;
+    padding: 20px 20px 20px 0; }
+  nav ul {
+    height: 7px;
+    display: inline-block;
+    vertical-align: top; }
+    nav ul li {
+      display: block;
+      float: left;
+      padding: 30px 20px 20px 0; }
+      nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300; }
+
 p {
-  color: #990000;
+  color: #171717;
   font-family: "Tiempos"; }
 
 @font-face {
@@ -99,13 +192,6 @@ p {
 .icon-play:before {
   content: "\72"; }
 
-.row:before, nav:before, .row:after, nav:after {
-  content: "";
-  display: table; }
-
-.row:after, nav:after {
-  clear: both; }
-
 .full {
   width: 100%; }
 
@@ -191,85 +277,3 @@ p {
     padding: 30px; }
   .row .col.pad-large {
     padding: 40px; }
-
-.recipe-card {
-  display: block;
-  float: left;
-  border: 1px solid #ececec;
-  border-radius: 1em 1em 0 0; }
-  .recipe-card .label-watch {
-    background-color: #990000;
-    color: white;
-    padding: 10px 20px;
-    margin-top: -40px;
-    position: absolute;
-    font-family: "Roboto", sans-serif; }
-  .recipe-card img {
-    background-color: #333333;
-    width: 100%;
-    border-radius: 1em 1em 0 0; }
-  .recipe-card h3 {
-    margin: 0;
-    padding: 10px;
-    font-weight: 400; }
-  .recipe-card ul.recipe-icons {
-    -webkit-padding-start: 10px;
-    -webkit-margin-before: 10px;
-    -moz-margin-start: 10px;
-    padding-left: 10px; }
-    .recipe-card ul.recipe-icons li {
-      display: block;
-      float: left;
-      padding-right: 20px;
-      font-family: "icon-font-1"; }
-
-ul.recipe-tiles {
-  -webkit-padding-start: 0;
-  -webkit-margin-before: 0;
-  -moz-margin-start: 0;
-  padding-left: 0; }
-  ul.recipe-tiles li {
-    box-sizing: border-box;
-    width: 25%;
-    padding: 10px;
-    display: block;
-    float: left; }
-    ul.recipe-tiles li ul {
-      -webkit-padding-start: 0;
-      -webkit-margin-before: 0;
-      -moz-margin-start: 0;
-      padding-left: 0; }
-      ul.recipe-tiles li ul li {
-        padding: 10px; }
-    ul.recipe-tiles li img {
-      width: 100%; }
-    ul.recipe-tiles li.featured {
-      width: 50%; }
-      ul.recipe-tiles li.featured > * {
-        display: block;
-        float: left;
-        box-sizing: border-box; }
-      ul.recipe-tiles li.featured img {
-        width: 50%; }
-      ul.recipe-tiles li.featured .tile-featured-description {
-        width: 50%;
-        padding: 10px;
-        background-color: #990000;
-        color: white; }
-
-nav {
-  background-color: #ececec; }
-  nav img {
-    display: inline-block;
-    padding: 20px 20px 20px 0; }
-  nav ul {
-    height: 7px;
-    display: inline-block;
-    vertical-align: top; }
-    nav ul li {
-      display: block;
-      float: left;
-      padding: 30px 20px 20px 0; }
-      nav ul li a {
-        color: #000000;
-        text-decoration: none; }

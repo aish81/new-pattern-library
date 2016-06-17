@@ -4,7 +4,7 @@ nav{background-color:#ececec;
   ul{height:7px; display:inline-block; vertical-align: top;
     li{display: block; float: left; padding: $medium $small $small 0;
       //replace colour with variable
-      a{color:$black; text-decoration: none;}
+      a{color:$black; text-decoration: none; font-family: $roboto; font-weight: 300;}
     }
   }
 }

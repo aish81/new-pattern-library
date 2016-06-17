@@ -7,9 +7,10 @@
    font-family: $roboto;}
   img{background-color: #333333; width:100%; border-radius:1em 1em 0 0 ;
   }
-  h3{ margin:0; padding:$x-small; font-weight:400;}
+  h3{ margin:0; padding:$x-small; font-family: $Tiempos; font-weight:400;}
   ul.recipe-icons{
     @include ul-start-space($x-small);
+    margin-bottom:$x-small;
     li{display:block; float:left; padding-right:$small; font-family:$icon-font; }
   }
 }

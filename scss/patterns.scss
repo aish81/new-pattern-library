@@ -1,11 +1,11 @@
 @import "base/reset.scss";
 @import "base/variables.scss";
-@import "base/typography.scss";
+
 @import "utils/mixins.scss";
-
-@import "base/grid.scss";
-
-
 
 @import "pages/recipes.scss";
 @import "components/navigation.scss";
+
+@import "base/typography.scss";
+
+@import "base/grid.scss";
