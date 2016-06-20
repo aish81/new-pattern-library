@@ -16,6 +16,7 @@
 }
 
 @include small-mobile{
+  .hide-tablet-down{display:none !important;}
   .container{width:300px;}
   .half,
   .quarter
@@ -44,6 +45,8 @@
 }
 @include medium-tablet{
   .container{ width:760px;}
+  .hide-tablet-down{display:block !important;}
+  .show-tablet-down{display:none;}
 
 }
 

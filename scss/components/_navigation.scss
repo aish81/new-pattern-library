@@ -8,13 +8,27 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
     }
   }
   }
-  img.logo{display:inline-block; padding: $small;}
+  img.logo{display:inline-block; padding: $small; width:$logo-width; float:left }
   @extend %clearfix;
-  ul.main-nav-items{height:7px; display:inline-block; vertical-align: top; width:auto;
+  ul.main-nav-items{
+    @include ul-start-space(0);
+    margin-top:20px;
+    display:inline-block; vertical-align: top; width:calc(100% - 190px);
     li{display: block; float: left; padding: $medium $small $small 0;
       //replace colour with variable
       a{color:$black; text-decoration: none;  font-weight: 300;}
       &:last-child{float:right; font-family:$icon-font;}
     }
   }
+}
+
+
+@include small-mobile{
+  .burger-menu-button{ display:block;}
+}
+
+
+@include small-tablet{
+  .burger-menu-button{ display:none;}
+
 }

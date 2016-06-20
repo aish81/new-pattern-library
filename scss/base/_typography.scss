@@ -114,3 +114,17 @@ p{color:#171717; font-family: $Tiempos;}
 .icon-play:before {
   content: "\72";
 }
+.icon-search-plus:before {
+  content: "\73";
+}
+.icon-search-minus:before {
+  content: "\74";
+}
+.icon-search:before {
+  content: "\75";
+}
+.icon-user:before {
+  content: "\76";
+}
+
+.icon{font-family: $icon-font;}
