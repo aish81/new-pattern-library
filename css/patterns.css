@@ -78,23 +78,46 @@ ul.recipe-tiles {
         color: white; }
 
 nav {
-  background-color: #ececec; }
-  nav img {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  font-family: "Roboto", sans-serif; }
+  nav .top-navigation {
+    background-color: black;
+    width: 100%;
+    height: 40px; }
+    nav .top-navigation ul {
+      float: right;
+      margin: 0; }
+      nav .top-navigation ul li {
+        padding: 0.65em;
+        list-style-type: none;
+        display: block;
+        float: left; }
+        nav .top-navigation ul li:nth-child(2) {
+          background-color: #00DD00; }
+        nav .top-navigation ul li a {
+          color: white;
+          display: block;
+          text-decoration: none; }
+  nav img.logo {
     display: inline-block;
-    padding: 20px 20px 20px 0; }
-  nav ul {
+    padding: 20px; }
+  nav ul.main-nav-items {
     height: 7px;
     display: inline-block;
-    vertical-align: top; }
-    nav ul li {
+    vertical-align: top;
+    width: auto; }
+    nav ul.main-nav-items li {
       display: block;
       float: left;
       padding: 30px 20px 20px 0; }
-      nav ul li a {
+      nav ul.main-nav-items li a {
         color: #000000;
         text-decoration: none;
-        font-family: "Roboto", sans-serif;
         font-weight: 300; }
+      nav ul.main-nav-items li:last-child {
+        float: right;
+        font-family: "icon-font-1"; }
 
 p {
   color: #171717;
