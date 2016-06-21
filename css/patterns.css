@@ -240,10 +240,13 @@ nav {
         list-style-type: none;
         display: block;
         float: left; }
+        nav .top-navigation ul li:first-child a {
+          color: #ececec; }
         nav .top-navigation ul li:nth-child(2) {
           background-color: #00DD00; }
+          nav .top-navigation ul li:nth-child(2) a {
+            color: #ffffff; }
         nav .top-navigation ul li a {
-          color: white;
           display: block;
           text-decoration: none; }
   nav img.logo {
@@ -259,18 +262,47 @@ nav {
     margin-top: 20px;
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 190px); }
+    width: calc(100% - 195px); }
     nav ul.main-nav-items li {
       display: block;
       float: left;
-      padding: 30px 20px 20px 0; }
+      padding: 30px 0 20px 20px; }
+      nav ul.main-nav-items li:nth-child(-n+5) {
+        max-width: 80px;
+        text-align: center; }
       nav ul.main-nav-items li a {
         color: #000000;
         text-decoration: none;
         font-weight: 300; }
       nav ul.main-nav-items li:last-child {
-        float: right;
-        font-family: "icon-font-1"; }
+        float: right; }
+        nav ul.main-nav-items li:last-child input {
+          border: none;
+          border-bottom: 1px solid #ececec;
+          width: 115px; }
+        nav ul.main-nav-items li:last-child span {
+          font-family: "icon-font-1";
+          color: #ececec; }
+  nav ul.mobile-menu {
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -moz-margin-start: 0;
+    padding-left: 0; }
+    nav ul.mobile-menu li {
+      list-style-type: none;
+      display: block;
+      float: left;
+      width: 33.333%;
+      text-align: center; }
+      nav ul.mobile-menu li.icon {
+        font-size: 5em; }
+      nav ul.mobile-menu li img {
+        padding: 1em;
+        width: calc(100% - 2em);
+        max-height: 4em; }
+      nav ul.mobile-menu li a {
+        text-decoration: none;
+        color: #ececec; }
 
 @media only screen and (min-width: 320px) {
   .burger-menu-button {
@@ -278,7 +310,9 @@ nav {
 
 @media only screen and (min-width: 640px) {
   .burger-menu-button {
-    display: none; } }
+    display: none; }
+  nav ul.main-nav-items li:nth-child(-n+5) {
+    max-width: 220px; } }
 
 .full {
   width: 100%; }

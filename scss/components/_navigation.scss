@@ -3,21 +3,35 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
     background-color: black; width:100%; height:40px;
   ul{float:right; margin:0;
     li{ padding:0.65em; list-style-type: none; display: block; float: left;
-      &:nth-child(2){background-color: #00DD00;}
-      a{color:white; display:block; text-decoration: none;}
+      &:first-child{ a{color:$grey-accent;}}
+      &:nth-child(2){background-color: #00DD00;
+            a{color:$white;}}
+      a{ display:block; text-decoration: none;}
     }
   }
   }
-  img.logo{display:inline-block; padding: $small; width:$logo-width; float:left }
+  img.logo{display:inline-block; padding: $small; width:$logo-width; float:left; }
   @extend %clearfix;
   ul.main-nav-items{
     @include ul-start-space(0);
     margin-top:20px;
-    display:inline-block; vertical-align: top; width:calc(100% - 190px);
-    li{display: block; float: left; padding: $medium $small $small 0;
-      //replace colour with variable
+    display:inline-block; vertical-align: top; width:calc(100% - 195px);
+    li{display: block; float: left; padding: $medium  0 $small $small ;
+      &:nth-child(-n+5){max-width:80px; text-align: center;}
+      //replace colours with variables
       a{color:$black; text-decoration: none;  font-weight: 300;}
-      &:last-child{float:right; font-family:$icon-font;}
+      &:last-child{float:right;
+        input{border:none; border-bottom:1px solid $grey-accent; width:115px;}
+        span{font-family:$icon-font; color:$grey-accent;}
+      }
+    }
+  }
+  ul.mobile-menu{
+    @include ul-start-space(0);
+    li{list-style-type: none; display:block; float:left; width:$third; text-align: center;
+      &.icon{font-size: 5em;}
+      img{padding:1em; width:calc(100% - 2em); max-height:4em;}
+    a{text-decoration: none; color: $grey-accent;}
     }
   }
 }
@@ -30,5 +44,5 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
 
 @include small-tablet{
   .burger-menu-button{ display:none;}
-
+  nav ul.main-nav-items li:nth-child(-n+5){max-width:220px; }
 }
