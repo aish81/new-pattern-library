@@ -288,6 +288,8 @@ nav {
     -webkit-margin-before: 0;
     -moz-margin-start: 0;
     padding-left: 0; }
+    nav ul.mobile-menu svg {
+      fill: #550066; }
     nav ul.mobile-menu li {
       list-style-type: none;
       display: block;
@@ -310,7 +312,15 @@ nav {
       padding-left: 0; }
       nav ul.mobile-menu ul.mobile-nav-items li {
         width: 100%;
-        padding: 1em; }
+        padding: 1em;
+        box-sizing: border-box; }
+  nav .search-input-holder {
+    height: 4em;
+    background-color: #bfbfbf;
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both; }
 
 @media only screen and (min-width: 320px) {
   .burger-menu-button {

@@ -2,18 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Title</title>
     <link href="css/patterns.css" rel="stylesheet"/>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="main-nav">
-    <a href="index.html"><img src="images/swlogo-large.svg" height="70px"/></a>
-    <ul>
-        <li><a href="grid.html">grid</a></li>
-        <li><a href="typography.html">typography</a></li>
-        <li><a href="buttons.html">buttons</a></li>
-        <li><a href="components.html">components</a></li>
+    <div class="top-navigation">
+        <ul >
+            <li><a href="#"><span class="icon">v</span>Login</a></li>
+            <li><a href="#">Join Today</a></li>
+        </ul>
+    </div>
+    <div class="hide-tablet-down">
+        <a href="index.html" ><img class="logo" src="images/swlogo-large.svg" /></a>
+        <ul class="main-nav-items ">
+            <li><a href="grid.html">grid</a></li>
+            <li><a href="typography.html">typography</a></li>
+            <li><a href="buttons.html">buttons</a></li>
+            <li><a href="components.html">components</a></li>
+            <li><a href="flexbox.html">flex stuff - just testing</a></li>
+            <li><input type="search"><span class="icon">u</span></li>
+        </ul>
+    </div>
+    <ul class="mobile-menu show-tablet-down">
+        <li><a href="#"><img src="images/swlogo-small-black.svg"></a></li>
+        <li class=" search-item-open icon"><a href="#"><span>u</span></a></li>
+        <li >
+        <li><a class="menu-button-open" href="#"><img src="images/hamburger.svg"></a></li>
+        <ul class="mobile-nav-items ">
+            <li><a href="grid.html">grid</a></li>
+            <li><a href="typography.html">typography</a></li>
+            <li><a href="buttons.html">buttons</a></li>
+            <li><a href="components.html">components</a></li>
+            <li><a href="flexbox.html">flex stuff - just testing</a></li>
+        </ul>
+        </li>
     </ul>
+    <div class="search-input-holder">
+        search
+    </div>
 </nav>
 <div class="container">
 <h1>components</h1>
@@ -132,5 +161,6 @@
     </li>
 </ul>
 </div>
+<script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>
