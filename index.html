@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Title</title>
     <link href="css/patterns.css" rel="stylesheet"/>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -29,13 +30,20 @@
     <ul class="mobile-menu show-tablet-down">
         <li><a href="#"><img src="images/swlogo-small-black.svg"></a></li>
         <li class="icon"><a href="#"><span>u</span></a></li>
-        <li class="icon"><a href="#"><span>t</span></a></li>
+        <li >
+            <li><a class="menu-button-open" href="#"><img src="images/hamburger.svg"></a></li>
+                <ul class="mobile-nav-items ">
+                    <li><a href="grid.html">grid</a></li>
+                    <li><a href="typography.html">typography</a></li>
+                    <li><a href="buttons.html">buttons</a></li>
+                    <li><a href="components.html">components</a></li>
+                    <li><a href="flexbox.html">flex stuff - just testing</a></li>
+                </ul>
+            </li>
     </ul>
-
-
 </nav>
 <h1>welcome</h1>
 <p>built on <a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design principles</a> and <a href="http://getbem.com/introduction/">bem</a></p>
-
+<script type="text/javascript" src="js/site.js"></script>
 </body>
 </html>

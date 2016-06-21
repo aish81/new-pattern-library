@@ -4,7 +4,7 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
   ul{float:right; margin:0;
     li{ padding:0.65em; list-style-type: none; display: block; float: left;
       &:first-child{ a{color:$grey-accent;}}
-      &:nth-child(2){background-color: #00DD00;
+      &:nth-child(2){background-color: $green;
             a{color:$white;}}
       a{ display:block; text-decoration: none;}
     }
@@ -32,6 +32,10 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
       &.icon{font-size: 5em;}
       img{padding:1em; width:calc(100% - 2em); max-height:4em;}
     a{text-decoration: none; color: $grey-accent;}
+    }
+    ul.mobile-nav-items{
+      @include ul-start-space(0);
+      li{width:100%; padding:1em;}
     }
   }
 }
