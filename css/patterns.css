@@ -303,7 +303,9 @@ nav {
     nav div.full-search .search-close {
       position: absolute;
       right: 0;
-      top: 0; }
+      top: 0;
+      padding: 0.21em;
+      font-size: 1em; }
   nav ul.mobile-menu {
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
@@ -317,6 +319,8 @@ nav {
       text-align: center; }
       nav ul.mobile-menu li.icon {
         font-size: 5em; }
+      nav ul.mobile-menu li.search-item-open {
+        text-align: right; }
       nav ul.mobile-menu li img {
         padding: 1em;
         width: calc(100% - 2em);

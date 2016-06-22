@@ -29,12 +29,13 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
   div.full-search{
     position: absolute; background-color: $white; display:block; width:100%; top:40px; left:100%; height:110px; display:none;
     input{height:100px; background-color: transparent; border:none;  width:100%; font-size:5em; color:#ececec; }
-    .search-close{position: absolute; right: 0; top:0;}
+    .search-close{position: absolute; right: 0; top:0; padding:0.21em; font-size: 1em;}
   }
   ul.mobile-menu{
     @include ul-start-space(0);
     li{list-style-type: none; display:block; float:left; width:$third; text-align: center;
       &.icon{font-size: 5em;}
+      &.search-item-open{text-align:right;}
       img{padding:1em; width:calc(100% - 2em); max-height:4em;}
     a{text-decoration: none; color: $grey-accent;}
     }
