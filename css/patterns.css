@@ -279,17 +279,36 @@ nav {
         nav ul.main-nav-items li:last-child input {
           border: none;
           border-bottom: 1px solid #bfbfbf;
-          width: 115px; }
+          width: 115px;
+          padding: .2em; }
         nav ul.main-nav-items li:last-child span {
           font-family: "icon-font-1";
           color: #bfbfbf; }
+  nav div.full-search {
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    top: 40px;
+    left: 100%;
+    height: 110px;
+    display: none; }
+    nav div.full-search input {
+      height: 100px;
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      font-size: 5em;
+      color: #ececec; }
+    nav div.full-search .search-close {
+      position: absolute;
+      right: 0;
+      top: 0; }
   nav ul.mobile-menu {
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
     -moz-margin-start: 0;
     padding-left: 0; }
-    nav ul.mobile-menu svg {
-      fill: #550066; }
     nav ul.mobile-menu li {
       list-style-type: none;
       display: block;
@@ -321,6 +340,13 @@ nav {
     display: block;
     width: 100%;
     clear: both; }
+    nav .search-input-holder input {
+      width: 100%;
+      height: 100%;
+      font-size: 3em;
+      color: #ececec; }
+      nav .search-input-holder input:focus {
+        outline-color: #ececec; }
 
 @media only screen and (min-width: 320px) {
   .burger-menu-button {

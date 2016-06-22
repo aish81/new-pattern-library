@@ -12,4 +12,15 @@ $ (function(){
     $('.search-item-open').on('click',function(){
         $('.search-input-holder').slideToggle();
     })
+
+
+    $('.main-input-search-trigger').on('click',function(){
+        $('.full-search').css('display','block').animate({left:0});
+    })
+
+    $('.search-close').on('click',function(){
+        $('.full-search').animate({left:'100%'}).fadeOut('slow');
+    })
+
+
 });
