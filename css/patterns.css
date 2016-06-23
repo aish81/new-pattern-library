@@ -228,25 +228,25 @@ nav {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
   font-family: "Roboto", sans-serif; }
-  nav .top-navigation {
+  nav .nav-top-navigation {
     background-color: black;
     width: 100%;
     height: 40px; }
-    nav .top-navigation ul {
+    nav .nav-top-navigation ul {
       float: right;
       margin: 0; }
-      nav .top-navigation ul li {
+      nav .nav-top-navigation ul li {
         padding: 0.65em;
         list-style-type: none;
         display: block;
         float: left; }
-        nav .top-navigation ul li:first-child a {
+        nav .nav-top-navigation ul li:first-child a {
           color: #bfbfbf; }
-        nav .top-navigation ul li:nth-child(2) {
+        nav .nav-top-navigation ul li:nth-child(2) {
           background-color: #90c92b; }
-          nav .top-navigation ul li:nth-child(2) a {
+          nav .nav-top-navigation ul li:nth-child(2) a {
             color: #ffffff; }
-        nav .top-navigation ul li a {
+        nav .nav-top-navigation ul li a {
           display: block;
           text-decoration: none; }
   nav img.logo {
@@ -254,7 +254,7 @@ nav {
     padding: 20px;
     width: 142px;
     float: left; }
-  nav ul.main-nav-items {
+  nav ul.nav-main-nav-items {
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
     -moz-margin-start: 0;
@@ -263,28 +263,28 @@ nav {
     display: inline-block;
     vertical-align: top;
     width: calc(100% - 195px); }
-    nav ul.main-nav-items li {
+    nav ul.nav-main-nav-items li {
       display: block;
       float: left;
       padding: 30px 0 20px 20px; }
-      nav ul.main-nav-items li:nth-child(-n+5) {
+      nav ul.nav-main-nav-items li:nth-child(-n+5) {
         max-width: 80px;
         text-align: center; }
-      nav ul.main-nav-items li a {
+      nav ul.nav-main-nav-items li a {
         color: #000000;
         text-decoration: none;
         font-weight: 300; }
-      nav ul.main-nav-items li:last-child {
+      nav ul.nav-main-nav-items li:last-child {
         float: right; }
-        nav ul.main-nav-items li:last-child input {
+        nav ul.nav-main-nav-items li:last-child input {
           border: none;
           border-bottom: 1px solid #bfbfbf;
           width: 115px;
           padding: .2em; }
-        nav ul.main-nav-items li:last-child span {
+        nav ul.nav-main-nav-items li:last-child span {
           font-family: "icon-font-1";
           color: #bfbfbf; }
-  nav div.full-search {
+  nav div.nav-main-nav-full-search {
     position: absolute;
     background-color: #ffffff;
     display: block;
@@ -293,47 +293,47 @@ nav {
     left: 100%;
     height: 110px;
     display: none; }
-    nav div.full-search input {
+    nav div.nav-main-nav-full-search input {
       height: 100px;
       background-color: transparent;
       border: none;
       width: 100%;
       font-size: 5em;
       color: #ececec; }
-    nav div.full-search .search-close {
+    nav div.nav-main-nav-full-search .search-close {
       position: absolute;
       right: 0;
       top: 0;
       padding: 0.21em;
       font-size: 1em; }
-  nav ul.mobile-menu {
+  nav ul.nav-mobile-menu {
     -webkit-padding-start: 0;
     -webkit-margin-before: 0;
     -moz-margin-start: 0;
     padding-left: 0; }
-    nav ul.mobile-menu li {
+    nav ul.nav-mobile-menu li {
       list-style-type: none;
       display: block;
       float: left;
       width: 33.333%;
       text-align: center; }
-      nav ul.mobile-menu li.icon {
+      nav ul.nav-mobile-menu li.icon {
         font-size: 5em; }
-      nav ul.mobile-menu li.search-item-open {
+      nav ul.nav-mobile-menu li.nav-search-item-open {
         text-align: right; }
-      nav ul.mobile-menu li img {
+      nav ul.nav-mobile-menu li img {
         padding: 1em;
         width: calc(100% - 2em);
         max-height: 4em; }
-      nav ul.mobile-menu li a {
+      nav ul.nav-mobile-menu li a {
         text-decoration: none;
         color: #bfbfbf; }
-    nav ul.mobile-menu ul.mobile-nav-items {
+    nav ul.nav-mobile-menu ul.mobile-nav-items {
       -webkit-padding-start: 0;
       -webkit-margin-before: 0;
       -moz-margin-start: 0;
       padding-left: 0; }
-      nav ul.mobile-menu ul.mobile-nav-items li {
+      nav ul.nav-mobile-menu ul.mobile-nav-items li {
         width: 100%;
         padding: 1em;
         box-sizing: border-box; }

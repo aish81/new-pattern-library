@@ -1,5 +1,5 @@
 nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $roboto;
-  .top-navigation{
+  .nav-top-navigation{
     background-color: black; width:100%; height:40px;
   ul{float:right; margin:0;
     li{ padding:0.65em; list-style-type: none; display: block; float: left;
@@ -12,7 +12,7 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
   }
   img.logo{display:inline-block; padding: $small; width:$logo-width; float:left; }
   @extend %clearfix;
-  ul.main-nav-items{
+  ul.nav-main-nav-items{
     @include ul-start-space(0);
     margin-top:20px;
     display:inline-block; vertical-align: top; width:calc(100% - 195px);
@@ -26,16 +26,16 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
       }
     }
   }
-  div.full-search{
+  div.nav-main-nav-full-search{
     position: absolute; background-color: $white; display:block; width:100%; top:40px; left:100%; height:110px; display:none;
     input{height:100px; background-color: transparent; border:none;  width:100%; font-size:5em; color:#ececec; }
     .search-close{position: absolute; right: 0; top:0; padding:0.21em; font-size: 1em;}
   }
-  ul.mobile-menu{
+  ul.nav-mobile-menu{
     @include ul-start-space(0);
     li{list-style-type: none; display:block; float:left; width:$third; text-align: center;
       &.icon{font-size: 5em;}
-      &.search-item-open{text-align:right;}
+      &.nav-search-item-open{text-align:right;}
       img{padding:1em; width:calc(100% - 2em); max-height:4em;}
     a{text-decoration: none; color: $grey-accent;}
     }
@@ -53,11 +53,9 @@ nav{ box-sizing: border-box; border-bottom:1px solid #ececec; font-family: $robo
   }
 }
 
-
 @include small-mobile{
   .burger-menu-button{ display:block;}
 }
-
 
 @include small-tablet{
   .burger-menu-button{ display:none;}
